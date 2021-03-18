@@ -3,7 +3,7 @@
 @File       :file_batch_rename.py
 @Time       :2021/3/18 22:01
 @Author     :HN-LCF
-@Email      :lou116211@outlook.com
+@Email      :lou666888out@163.com
 @Software   :PyCharm
 """
 
