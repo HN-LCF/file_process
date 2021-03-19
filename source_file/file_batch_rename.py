@@ -15,7 +15,7 @@ import os
 import sys
 
 
-def rename():
+def file_rename():
     path = input("请输入路径(例如D:\\\\picture)：")
     # name = input("请输入开头名:")
     # startNumber = input("请输入开始数:")
@@ -39,4 +39,4 @@ def rename():
 
 
 if __name__ == "__main__":
-    rename()
+    file_rename()
