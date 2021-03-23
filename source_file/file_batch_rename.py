@@ -12,7 +12,6 @@
 
 
 import os
-import sys
 
 
 def file_rename():
@@ -26,15 +25,15 @@ def file_rename():
 
     # 输出为 test
     for files in file_list:
-        old_file = os.path.join(path, files)
-        old_name = os.path.basename(old_file)
-        old_name = old_name.split('.')[0]
+        old_file = os.path.join(path, files)  # 文件路径
+        old_name = os.path.basename(old_file)  # 文件全名（带后缀）
+        old_name = old_name.split('.')[0]  # 文件全名（无后缀）
         print(old_name)
         if os.path.isdir(old_file):
             continue
-        new_file = os.path.join(path, '附件1：2019级材料成型及控制工程专业3班'+old_name+'教育评议表'+file_type)
-        os.rename(old_file, new_file)
-        count += 1
+        new_file = os.path.join(path, '附件1：2019级材料成型及控制工程专业3班' + old_name + '教育评议表' + file_type)  # 文件新名（带后缀）
+        os.rename(old_file, new_file)  # 重命名
+        count += 1  # 计数
     print("一共修改了" + str(count) + "个文件")
 
 
