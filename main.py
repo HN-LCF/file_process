@@ -13,7 +13,8 @@
 from src import image_process as ip
 
 print("Start:\n")
-file_name = '../data/photos/lcf.jpg'
-ip.image_process(file_name)
+file_path = './data/photos/'
+file_name = 'lcf.jpg'
+ip.image_process(file_path, file_name)
 
 print("Hello World -- Python")

@@ -14,18 +14,20 @@
 from PIL import Image
 
 
-def image_process(fileName):
+def image_process(filePath, fileName):
     """
 
+    :param filePath:
     :param fileName:
     :return:
     """
 
-    image = Image.open(fileName)  # 读取图片rgb 格式<class 'numpy.array'>
+    image = Image.open(filePath + fileName)  # 读取图片rgb 格式<class 'numpy.array'>
     image = image.resize((2048, 1536))
-    image.save('../data/photos/lcf-1.jpg', quality=95, dpi=(30.0, 30.0))  # 调整图像的分辨率为300,dpi可以更改
+    image.save(filePath + 'new_img.jpg', quality=95, dpi=(30.0, 30.0))  # 调整图像的分辨率为300,dpi可以更改
 
 
 if __name__ == "__main__":
-    file_name = '../data/photos/lcf.jpg'
-    image_process(file_name)
+    file_path = '../data/photos/'
+    file_name = 'lcf.jpg'
+    image_process(file_path, file_name)
