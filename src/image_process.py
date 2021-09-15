@@ -24,7 +24,8 @@ def image_process(filePath, fileName):
 
     image = Image.open(filePath + fileName)  # 读取图片rgb 格式<class 'numpy.array'>
     image = image.resize((2048, 1536))
-    image.save(filePath + 'new_img.jpg', quality=95, dpi=(30.0, 30.0))  # 调整图像的分辨率为300,dpi可以更改
+    image.save(filePath + 'new_img.jpg', quality=95,
+               dpi=(30.0, 30.0))  # 调整图像的分辨率为300,dpi可以更改
 
 
 if __name__ == "__main__":
