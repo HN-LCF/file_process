@@ -10,11 +10,11 @@
 # todo:
 #   -
 
-from src import image_process as ip
+from src import image_resize as ir
 
 print("Start:\n")
 file_path = './data/photos/'
 file_name = 'lcf.jpg'
-ip.image_process(file_path, file_name)
+ir.image_resize(file_path, file_name)
 
 print("Hello World -- Python")
