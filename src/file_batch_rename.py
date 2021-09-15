@@ -34,7 +34,8 @@ def file_rename():
         print(old_name)
         if os.path.isdir(old_file):
             continue
-        new_file = os.path.join(path, '附件1：2019级材料成型及控制工程专业3班' + old_name + '教育评议表' + file_type)  # 文件新名（带后缀）
+        new_file = os.path.join(
+            path, '附件1：2019级材料成型及控制工程专业3班' + old_name + '教育评议表' + file_type)  # 文件新名（带后缀）
         os.rename(old_file, new_file)  # 重命名
         count += 1  # 计数
     print("一共修改了" + str(count) + "个文件")
