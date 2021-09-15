@@ -11,8 +11,6 @@
 #   -
 
 
-import cv2
-
 from PIL import Image
 
 
@@ -23,8 +21,7 @@ def image_process(fileName):
     :return:
     """
 
-    img = cv2.imread(fileName)  # 读取图片rgb 格式<class 'numpy.array'>
-    image = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))  # 格式转换，bgr转rgb
+    image = Image.open(fileName)  # 读取图片rgb 格式<class 'numpy.array'>
     image = image.resize((2048, 1536))
     image.save('../data/photos/lcf-1.jpg', quality=95, dpi=(30.0, 30.0))  # 调整图像的分辨率为300,dpi可以更改
 
