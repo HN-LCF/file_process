@@ -20,7 +20,7 @@ def image_resize(path, name):
 
     :param path: path of image file to be modified.
     :param name: name of image file to be modified.
-    :return:
+    :return: Generate a new image named `new_img.jpg` in the `path`.
     """
 
     image = Image.open(path + name)  # 读取图片rgb 格式<class 'numpy.array'>
