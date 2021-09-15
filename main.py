@@ -10,4 +10,10 @@
 # todo:
 #   -
 
+from src import image_process as ip
+
+print("Start:\n")
+file_name = '../data/photos/lcf.jpg'
+ip.image_process(file_name)
+
 print("Hello World -- Python")
