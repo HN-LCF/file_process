@@ -1,9 +1,16 @@
+# Python
 
-
+## Jetbrains Config
 .idea
 *.iml
 
+## Python Package
+*/__pycache__
+
+## Vscode Config
 .vscode
 
+
+## Image Files
 *.jpg
 *.png
