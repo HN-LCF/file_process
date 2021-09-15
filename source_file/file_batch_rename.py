@@ -15,6 +15,9 @@ import os
 
 
 def file_rename():
+    """
+    批量命名同类型文件
+    """
     path = input("请输入路径(例如D:\\\\picture)：")
     # name = input("请输入开头名:")
     # startNumber = input("请输入开始数:")
